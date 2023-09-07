@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" /> <!-- Include your custom CSS styles -->
+    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css" /> <!-- Include Chessboard.js CSS -->
     <title>Chess</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/chessboard-1.0.0.min.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-      <h1>Chess</h1>
-      <div class="board" id="board">
+        <h1>Chess Game</h1>
+        <div class="board" id="board"></div> <!-- The container for the chessboard -->
         <div class="buttons">
-          <button class="button play-again">Play Again</button>
-          <button class="button set-pos">Set Position</button>
-          <button class="button flip-board">Flip Board</button>
+            <button class="play-again">Play Again</button> <!-- Button to start a new game -->
+            <button class="set-pos">Set Position</button> <!-- Button to set a custom position -->
+            <button class="flip-board">Flip Board</button> <!-- Button to flip the board -->
         </div>
-        <div id="move-history" class="move-history"></div>
-      </div>
+        <div id="move-history" class="move-history"></div> <!-- Display move history here -->
     </div>
 
-    <script src="js/chessboard-1.0.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.13.4/chess.min.js"></script>
+    <!-- Include jQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  </body>
+
+    <!-- Include Chessboard.js library -->
+    <script src="js/chessboard-1.0.0.min.js"></script>
+
+    <!-- Include Chess.js library for chess logic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+
+    <!-- Include your custom JavaScript code for the chess game -->
+    <script src="script.js"></script>
+</body>
 </html>
